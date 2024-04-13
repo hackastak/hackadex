@@ -2,13 +2,13 @@
 const baseUrl = "https://pokeapi.co/api/v2"
 
 async function getPokemonList(){
-  const response = await fetch(baseUrl + "/pokemon?limit=1000")
+  const response = await fetch(baseUrl + "/pokemon?limit=10000")
   const data = await response.json()
 
   return data
 }
 
-export default async function PokemonList(){
+const PokemonList = async () => {
   const data = await getPokemonList()
 
   return (
@@ -22,3 +22,5 @@ export default async function PokemonList(){
     </div>
   )
 }
+
+export default PokemonList

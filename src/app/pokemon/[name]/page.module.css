@@ -1,0 +1,10 @@
+.pokeInfoContainer {
+  margin: 0 20px;
+}
+
+.pokeInfoHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
