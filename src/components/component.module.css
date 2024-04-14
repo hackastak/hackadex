@@ -1,0 +1,9 @@
+.listCardContainer {
+    display: flex;
+    justify-content: space-between;
+    border-radius: 10px;
+    box-shadow: 3px 5px 10px;
+    width: 250px;
+    margin: 10px;
+    padding: 2px 5px;
+}

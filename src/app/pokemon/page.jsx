@@ -1,8 +1,11 @@
+import ListCard from "../../components/ListCard"
+import styles from "./page.module.css"
+
 
 const baseUrl = "https://pokeapi.co/api/v2"
 
 async function getPokemonList(){
-  const response = await fetch(baseUrl + "/pokemon?limit=10000")
+  const response = await fetch(baseUrl + "/pokemon?limit=10")
   const data = await response.json()
 
   return data
@@ -12,13 +15,13 @@ const PokemonList = async () => {
   const data = await getPokemonList()
 
   return (
-    <div>
+    <div className={styles.hackadexListContainer}>
       <h1>Pokemon List</h1>
-      {data.results.map((pokemon, index) => (
-        <div className="" key={index}>
-          <a href={`/pokemon/${pokemon.name}`}>{pokemon.name}</a>
-        </div>
-      ))}
+      <div className={styles.hackadexList}>
+        {data.results.map((pokemon, index) => (
+          <ListCard key={index} pokemon={pokemon} />
+        ))}
+      </div>
     </div>
   )
 }

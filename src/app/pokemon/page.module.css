@@ -1,0 +1,11 @@
+.hackadexListContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.hackadexList {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;;
+}
