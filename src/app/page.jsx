@@ -7,7 +7,7 @@ const baseUrl = "https://pokeapi.co/api/v2/";
 export default function Home() {
   return (
     <main className={styles.main}>
-      <h1>Hack-A-Dex</h1> 
+      <h1 className={styles.heading}>Hack-A-Dex</h1> 
       <h3>A Pokedex Clone by Hackastak</h3>
       <div></div>
     </main>

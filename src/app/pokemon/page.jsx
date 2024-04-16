@@ -5,7 +5,7 @@ import styles from "./page.module.css"
 const baseUrl = "https://pokeapi.co/api/v2"
 
 async function getPokemonList(){
-  const response = await fetch(baseUrl + "/pokemon?limit=10")
+  const response = await fetch(baseUrl + "/pokemon?limit=25")
   const data = await response.json()
 
   return data

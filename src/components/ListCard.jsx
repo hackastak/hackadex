@@ -13,8 +13,13 @@ const ListCard = async({pokemon}) => {
 
   return (
     <div className={styles.listCardContainer}>
-      <Image src={data.sprites.other['official-artwork'].front_default} alt={data.name} width="60" height="60"/>
-      <p>{name}</p>
+      <div className={styles.listCardImage}>
+        <Image src={data.sprites.other['official-artwork'].front_default} alt={data.name} width="60" height="60"/>
+      </div>
+      <div className={styles.listCardDetails}>
+        <h2>{name}</h2>
+
+      </div>
     </div>
   )
 }
